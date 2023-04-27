@@ -1,0 +1,141 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@500;600&display=swap');
+
+/* Header */
+.header {
+    background-color: #D70018;
+}
+
+.navbar-collapse .navbar-nav .nav-item .nav-link {
+    color: #fff;
+}
+
+.header .navbar-brand img {
+    width: 160px;
+    height: 35px;
+}
+
+.admin .fa-user {
+    font-size: 30px;
+    margin: 0 10px;
+}
+
+.navbar-link{
+    border-radius: 10px;
+    background-color: #DF3346;
+    margin: 0 10px;
+}
+
+.nav-logout{
+    width: 88% !important;
+    text-align: center;
+    color: #000;
+    font-weight: 600;
+    background-color: #e9ecef;
+}
+
+.nav-logout:hover{
+    background-color: #DF3346;
+    color: #fff;
+}
+
+
+
+
+
+/* cart */
+
+.cart{
+    font-size: 20px;
+}
+.cart:after {
+    content: attr(value);
+    width: 50px;
+    height: 50px;
+    font-size: 12px;
+    background: red;
+    border-radius: 50%;
+    padding: 3px;
+    position: relative;
+    left: -8px;
+    top: -10px;
+    opacity: 0.9;
+    border: 2px solid #fff;
+    padding-right: 5px;
+}
+
+
+.nav-sub-link{
+    color: #000;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+/* Home Product */
+.title-category{
+    margin: 30px 0;
+    font-size: 40px;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-weight: 600;
+}
+
+#product-item{
+    max-height: 400px;
+    height: 400px;
+    position: relative;
+    margin: 0 1px 15px 1px;
+    padding: 0;
+}
+
+#product-item img {
+    height: 160px;
+}
+
+#product-item .item{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px 3px #ccc;
+}
+
+#product-item .content .name-product{
+    height: 75px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+#product-item .name-product .product-link-detail{
+    text-decoration: none;
+    color: #000;
+}
+
+#product-item .content .price-product{
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Bai Jamjuree', sans-serif;
+    color: #D70018;
+}
+
+#product-item .image{
+    margin: 0 auto;
+    height: 45%;
+}
+
+.addcart{
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#product-item .item .content{
+    padding: 10px;
+    height: 40%;
+    overflow: hidden;
+}
+
+/* footer */
