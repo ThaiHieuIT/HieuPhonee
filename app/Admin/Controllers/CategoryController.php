@@ -28,6 +28,10 @@ class CategoryController extends AdminController
 
         $grid->column('id', __('Id'));
         $grid->column('name', __('Name'));
+        // $grid->column('images', __('images'));
+        $grid->column('images', __('Images'))->display(function($image){
+            return '<img src="../uploads/'.$image.'" style="width: 35px; height: 35px;">';
+        });
         $grid->column('created_at', __('Created at'));
         $grid->column('updated_at', __('Updated at'));
 
@@ -46,6 +50,7 @@ class CategoryController extends AdminController
 
         $show->field('id', __('Id'));
         $show->field('name', __('Name'));
+        $show->field('images', __('images'));
         $show->field('created_at', __('Created at'));
         $show->field('updated_at', __('Updated at'));
 
@@ -62,6 +67,7 @@ class CategoryController extends AdminController
         $form = new Form(new Category());
 
         $form->text('name', __('Name'));
+        $form->file('images', __('images'));
 
         return $form;
     }

@@ -27,6 +27,7 @@ class HomeController extends Controller
     {
         return view('home');
     }
+    
     public function addCart($id){
         $product = Product::find($id);
         $product -> quantity = 1;
@@ -46,7 +47,7 @@ class HomeController extends Controller
         }
         Session::forget('products');
         Session::put('products', $products);
-        return redirect('/');
+        return redirect('/')->with('status', 'Profile updated!');
     }
     public function cart()
     {

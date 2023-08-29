@@ -1,9 +1,7 @@
 @extends('layouts.master')
 
 @section('content')
-    {{-- @foreach ($products as $product) --}}
-        {{-- @if () --}}
-        <section>
+        <section class="all-padding">
             <div class="containerr flexx">
                 <div class="left">
                     <div class="main_image">
@@ -37,6 +35,4 @@
                 </div>
             </div>
         </section>
-        {{-- @endif --}}
-    {{-- @endforeach --}}
 @endsection

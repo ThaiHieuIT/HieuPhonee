@@ -4,7 +4,7 @@
     @php
         $products = session('products');
     @endphp
-    <section class="h-100 gradient-custom">
+    <section class="h-100 gradient-custom all-padding">
         <div class="container py-5">
             <div class="row d-flex justify-content-center my-4">
                 <div class="col-md-8">
@@ -60,7 +60,7 @@
                                         <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
                                             <!-- Quantity -->
                                             <div class="d-flex mb-4" style="max-width: 300px">
-                                                <button class="btn btn-primary px-3 me-2"
+                                                <button class="btn btn-primary px-3 me-2 btn-cart"
                                                     onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
                                                     <i class="fas fa-minus"></i>
                                                 </button>
@@ -71,7 +71,7 @@
                                                     <label class="form-label" for="form1">Quantity</label>
                                                 </div>
 
-                                                <button class="btn btn-primary px-3 ms-2"
+                                                <button class="btn btn-primary px-3 ms-2 btn-cart"
                                                     onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
                                                     <i class="fas fa-plus"></i>
                                                 </button>

@@ -1,6 +1,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@500;600&display=swap');
 
+/* ALL */
+
+.all-padding{
+    padding: 100px 0 30px 0;
+}
+
 /* Header */
 .header {
     background-color: #D70018;
@@ -10,9 +16,18 @@
     color: #fff;
 }
 
+.nav-link{
+    text-align: center;
+}
+
+.navbar-logo{
+    display: flex;
+    align-items: center;
+}
+
 .header .navbar-brand img {
-    width: 160px;
-    height: 35px;
+    width: 200px;
+    height: 55px;
 }
 
 .admin .fa-user {
@@ -24,6 +39,7 @@
     border-radius: 10px;
     background-color: #DF3346;
     margin: 0 10px;
+    font-size: 15px;
 }
 
 .nav-logout{
@@ -39,6 +55,30 @@
     color: #fff;
 }
 
+/* navbar */
+
+.navbar-right{
+    align-items: center;
+}
+
+.navbar-store{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 50px;
+}
+
+.header{
+    position: fixed;
+    z-index: 2;
+}
+
+.dropdown{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 
 
 
@@ -46,22 +86,20 @@
 /* cart */
 
 .cart{
-    font-size: 20px;
+    font-size: 40px;
+    position: relative;
 }
 .cart:after {
     content: attr(value);
-    width: 50px;
-    height: 50px;
-    font-size: 12px;
-    background: red;
-    border-radius: 50%;
-    padding: 3px;
-    position: relative;
-    left: -8px;
-    top: -10px;
-    opacity: 0.9;
-    border: 2px solid #fff;
-    padding-right: 5px;
+    font-size: 17px;
+    color: #D70018;
+    position: absolute;
+    top: 50%;
+    right: 35%;
+}
+
+.btn-cart{
+    height: 40px !important;
 }
 
 
@@ -79,6 +117,7 @@
     font-size: 40px;
     font-family: 'Bai Jamjuree', sans-serif;
     font-weight: 600;
+    color: #000 !important;
 }
 
 #product-item{
@@ -87,6 +126,21 @@
     position: relative;
     margin: 0 1px 15px 1px;
     padding: 0;
+}
+
+#product-item::before{
+    content: 'Hot';
+    padding: 0 0 0 10px;
+    font-weight: 600;
+    width: 53px;
+    z-index: 1;
+    color: #fff;
+    height: auto;
+    position: absolute;
+    background-color: red;
+    border-top-left-radius: 10px;
+    left: 0;
+    border-bottom-right-radius: 10px;
 }
 
 #product-item img {
@@ -136,6 +190,31 @@
     padding: 10px;
     height: 40%;
     overflow: hidden;
+}
+
+.tym {
+    color : #D70018;
+}
+
+
+/* page banner */
+.carousel-control-prev{
+    width: fit-content;
+    justify-content: start;
+}
+
+.carousel-control-next{
+    justify-content: end;
+    width: fit-content;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    border: 1px solid #000;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    background-image: none;
 }
 
 /* footer */

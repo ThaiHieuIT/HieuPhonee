@@ -7,9 +7,10 @@
     <title>@yield('title')</title>
     <link rel="stylesheet" href="{{asset('frontend/css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('/css/custom.css')}}">
-    <link rel="stylesheet" href="{{asset('/css/login.css')}}">
+    <link rel="stylesheet" href="{{asset('/css/auth.css')}}">
     <link rel="stylesheet" href="{{asset('/css/productdetail.css')}}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="{{asset('frontend/js/main.js')}}"></script>
 
 </head>
 <body>
@@ -22,6 +23,5 @@
 
 
     <script src="{{asset('frontend/js/bootstrap.min.js')}}"></script> 
-    <script src="{{asset('frontend/js/main.js')}}"></script>
 </body>
 </html>

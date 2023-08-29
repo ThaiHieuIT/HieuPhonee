@@ -1,59 +1,4 @@
-{{-- @extends('layouts.master')
-@section('title', 'Home')
-@section('content')
 
-    <!-- Products -->
-    <div class="container">
-        <div class="row">
-            <section>
-                <div class="container my-5">
-                    <header class="mb-4">
-                        <h3>{{ $category->name }}</h3>
-                    </header>
-
-                    <div class="row">
-                        @foreach ($products as $product)
-                            @if ($product->category_id == $category->id)
-                                <div class="col-lg-3 col-md-6 col-sm-6">
-                                    <div class="card my-2 shadow-0">
-                                        <a href="#" class="img-wrap">
-                                            <div class="mask" style="height: 50px;">
-                                                <div class="d-flex justify-content-start align-items-start h-100 m-2">
-                                                    <h6><span class="badge bg-success pt-2">Offer</span></h6>
-                                                </div>
-                                            </div>
-                                            <img src="../uploads/{{ $product->image }}" class="card-img-top"
-                                                style="aspect-ratio: 1 / 1; width: 100%; height:100%;">
-                                        </a>
-                                        <div class="card-body p-0 pt-3">
-                                            <h5 class="card-text mb-0">{{ $product->name }}</h5>
-                                            <h5 class="card-title">{{ number_format($product->price) }} VNĐ</h5>
-                                            <p class="text-muted">
-                                                @if ($product->status == true)
-                                                    <h6>Hàng Mới</h6>
-                                                @else
-                                                    <h6>Hàng Cũ</h6>
-                                                @endif
-                                            </p>
-                                            <div class="cart-product">
-                                                <a href="#!" class="btn btn-primary shadow-0 me-1">Add To Cart</a>
-                                                <a href="#!"
-                                                    class="btn btn-light border px-2 pt-2 float-end icon-hover"><i
-                                                        class="fas fa-heart fa-lg px-1 text-secondary"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            @endif
-                    @endforeach
-                </div>
-            </section>
-        </div>
-    </div>
-    <!-- Products -->
-    @include('layouts.inc.footer')
-
-@endsection --}}
 @extends('layouts.master')
 
 @section('content')
@@ -92,7 +37,7 @@
                                     <a href="../product/{{ $product->id }}" class="btn btn-primary shadow-0 me-1">Add To
                                         Cart</a>
                                     <a href="#!" class="btn btn-light border px-2 pt-2 float-end icon-hover"><i
-                                            class="fas fa-heart fa-lg px-1 text-secondary"></i></a>
+                                            class="fas fa-heart fa-lg px-1 tym"></i></a>
                                 </div>
                             </div>
                         </div>

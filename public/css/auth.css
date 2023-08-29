@@ -1,0 +1,26 @@
+/* Login*/
+
+.login-img , .register-img {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.login-img>img {
+    height: 100%;
+    position: absolute;
+}
+
+.register-img>img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.card-header{
+    border: none;
+    background: revert;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+}
