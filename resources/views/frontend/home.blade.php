@@ -32,7 +32,7 @@
                                 </div>
                             </div>
                             <div class="addcart">
-                                <a href="../product/{{$product->id}}"  class="btn btn-primary shadow-0 me-1">Add To Cart</a>
+                                <a href="{{ route('add_to_cart', $product->id) }}"  class="btn btn-primary shadow-0 me-1">Add To Cart</a>
                                 <a href="#!" class="btn btn-light border px-2 pt-2 float-end icon-hover tym"><i class="fas fa-heart fa-lg px-1 tym"></i></a>
                             </div>
                             

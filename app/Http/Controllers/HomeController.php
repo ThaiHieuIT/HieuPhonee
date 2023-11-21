@@ -43,7 +43,7 @@ class HomeController extends Controller
             $products = [];
         }
         if ($kt == 0) {
-            $products[] = $product;
+            $products[] = $product; 
         }
         Session::forget('products');
         Session::put('products', $products);

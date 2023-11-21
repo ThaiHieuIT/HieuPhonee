@@ -1,4 +1,4 @@
-<div class="container-fluid header">
+<div class="container-fluid header mb-3">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -65,9 +65,9 @@
                                     <a href="/cart" class="nav-link">
                                         <i class="fa-solid fa-bag-shopping cart" value="
                                         @php
-                                            if(Session::has('products')){
-                                                $products = session('products');
-                                                echo count($products);
+                                            if(Session::has('cart')){
+                                                $cart = session('cart');
+                                                echo count($cart);
                                             }else {
                                                 echo '0';
                                             } 
